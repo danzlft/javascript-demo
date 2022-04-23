@@ -72,3 +72,13 @@ capitalize = (word) => {
 console.log(capitalize("sam")); // Output: "Sam"
 console.log(capitalize("ALEX")); // Output: "Alex"
 console.log(capitalize("chARLie")); // Output: "Charlie"
+
+
+
+//Make a simple function called greet that returns the most-famous "hello world!".
+
+let greet = "";
+
+greet = () => {
+    console.log("hello world!");
+}
