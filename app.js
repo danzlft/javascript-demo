@@ -83,3 +83,9 @@
 //     console.log("hello world!");
 // }
 
+export function getNextAge(age) {
+    if (age){
+        return Number.parseInt(age, 10) + 1;
+    }
+    return 0;
+}
