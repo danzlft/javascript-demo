@@ -9,76 +9,77 @@
 // document.body.append(h1);
 
 
-let lowerName = " ";
+// let lowerName = " ";
 
-lowerName = (name) => {
-    return name.toLowerCase();
-}
+// lowerName = (name) => {
+//     return name.toLowerCase();
+// }
 
-console.log(lowerName("SAM"));
-console.log(lowerName("AiRi"));
+// console.log(lowerName("SAM"));
+// console.log(lowerName("AiRi"));
 
-let getCharCount = " ";
+// let getCharCount = " ";
 
-getCharCount = (str) => {
-    return str.length;
-}
+// getCharCount = (str) => {
+//     return str.length;
+// }
 
-console.log(getCharCount("Sam 25"));
-
-
-let language = "JavaScript";
-
-console.log(language.length);
+// console.log(getCharCount("Sam 25"));
 
 
-let charLength = "";
+// let language = "JavaScript";
 
-charLength = (name) => {
-    return name[name.length - 1];
-}
-
-console.log(charLength("Akari"));
+// console.log(language.length);
 
 
-let someString = "JavaScript";
+// let charLength = "";
 
-console.log(someString.substring(1, 4));
-console.log(someString.substring(4));
+// charLength = (name) => {
+//     return name[name.length - 1];
+// }
 
-let skipFirstCharacter = "";
-
-skipFirstCharacter = (text) => {
-    return text.substring(1);
-}
-
-console.log(skipFirstCharacter("Akari"));
+// console.log(charLength("Akari"));
 
 
-//String Interpolation//
+// let someString = "JavaScript";
 
-let js = "JavaScript";
-console.log(`I am learning ${js}!`);
+// console.log(someString.substring(1, 4));
+// console.log(someString.substring(4));
 
+// let skipFirstCharacter = "";
 
-//Complete the function capitalize such that it capitalizes the word parameter it receives.
+// skipFirstCharacter = (text) => {
+//     return text.substring(1);
+// }
 
-let capitalize = " ";
-
-capitalize = (word) => {
-    return word[0].toUpperCase() + word.substring(1).toLowerCase();
-}
-
-console.log(capitalize("sam")); // Output: "Sam"
-console.log(capitalize("ALEX")); // Output: "Alex"
-console.log(capitalize("chARLie")); // Output: "Charlie"
+// console.log(skipFirstCharacter("Akari"));
 
 
+// //String Interpolation//
 
-//Make a simple function called greet that returns the most-famous "hello world!".
+// let js = "JavaScript";
+// console.log(`I am learning ${js}!`);
 
-let greet = "";
 
-greet = () => {
-    console.log("hello world!");
-}
+// //Complete the function capitalize such that it capitalizes the word parameter it receives.
+
+// let capitalize = " ";
+
+// capitalize = (word) => {
+//     return word[0].toUpperCase() + word.substring(1).toLowerCase();
+// }
+
+// console.log(capitalize("sam")); // Output: "Sam"
+// console.log(capitalize("ALEX")); // Output: "Alex"
+// console.log(capitalize("chARLie")); // Output: "Charlie"
+
+
+
+// //Make a simple function called greet that returns the most-famous "hello world!".
+
+// let greet = "";
+
+// greet = () => {
+//     console.log("hello world!");
+// }
+
