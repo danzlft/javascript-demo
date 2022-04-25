@@ -83,9 +83,12 @@
 //     console.log("hello world!");
 // }
 
-export function getNextAge(age) {
-    if (age){
-        return Number.parseInt(age, 10) + 1;
-    }
-    return 0;
-}
+
+//Array Examples
+
+const users = []; //empty array
+const grades = [5, 20, 15, 30]; //array of numbers
+const atendees = ["Sam", "Alex"]; //array of strings
+const values = [10, false, "John"]; //mixed array
+
+
