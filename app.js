@@ -86,9 +86,45 @@
 
 //Array Examples
 
-const users = []; //empty array
-const grades = [5, 20, 15, 30]; //array of numbers
-const atendees = ["Sam", "Alex"]; //array of strings
-const values = [10, false, "John"]; //mixed array
+// const users = []; //empty array
+// const grades = [5, 20, 15, 30]; //array of numbers
+// const atendees = ["Sam", "Alex"]; //array of strings
+// const values = [10, false, "John"]; //mixed array
+
+
+// console.log(grades.length);
+// atendees.unshift("Akari");
+
+// console.log(atendees);
+
+
+//Array forEach
+
+//Declare a constant variable array
+//Variable of the array .forEach() //empty for now until we declare the function name
+//Declare function name
+
+/*
+const numbers = [25, 3, 8, 18, 10]
+numbers.forEach(myFunction) 
+                    
+                    value, index, array
+function myFunction (text, length, arr) //the function takes 3 arguements{
+    console.log(text);
+}    
+*/
+
+//Calculate the sum of the numbers from the array
+//Get value from the function 
+//Log sum += value
+
+const numbers = [5, 13, 9, 18, 9];
+let sum = 0;
+
+numbers.forEach((value) =>{
+    sum += value;
+})
+
+console.log(sum);
 
 
