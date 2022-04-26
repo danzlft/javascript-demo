@@ -147,4 +147,25 @@ function myFunction (text, length, arr) //the function takes 3 arguements{
 // console.log(count);
 
 
+// const names = ["Sam", "Charlie", "Alex"];
+
+// names.forEach(loopThroughElements);
+
+// function loopThroughElements (value) {
+//     console.log(value);
+// }
+
+
+
+// function logUserIds(userIds) {
+
+//     userIds.forEach(function(userID){
+//         console.log(userID);
+//     });
+//     return true;
+
+// }
+
+// logUserIds([10, 15, 14]);
+
 
