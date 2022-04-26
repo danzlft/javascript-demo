@@ -118,13 +118,33 @@ function myFunction (text, length, arr) //the function takes 3 arguements{
 //Get value from the function 
 //Log sum += value
 
-const numbers = [5, 13, 9, 18, 9];
-let sum = 0;
+// const numbers = [5, 13, 9, 18, 9];
+// let sum = 0;
 
-numbers.forEach((value) =>{
-    sum += value;
-})
+// numbers.forEach((value) =>{
+//     sum += value;
+// })
 
-console.log(sum);
+// console.log(sum);
+
+//Count how many times a letter appears inside an array
+
+// const letter = ['a', 'b', 'c', 'd', 'a', 'd', 'a', 'a'];
+// letter.push('a');
+// letter.push('b', 'b', 'b', 'b');
+
+// let count = {};
+
+// letter.forEach((value) => {
+//     if(count[value]) {
+//         count[value]++;
+//     }
+//     else{
+//         count[value] = 1;
+//     }
+// })
+
+// console.log(count);
+
 
 
