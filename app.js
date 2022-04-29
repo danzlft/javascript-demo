@@ -169,3 +169,38 @@ function myFunction (text, length, arr) //the function takes 3 arguements{
 // logUserIds([10, 15, 14]);
 
 
+// const sumOddNumbers = [15];
+// sumOddNumbers.forEach(numbers);
+
+// function numbers (number){
+//     if(numbers % 2 === 1){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+
+const persons = [
+    {
+        name: "Akari",
+        age: 22
+    },
+    {
+        name: "Ivan",
+        age: 25
+    },
+    {
+        name: "Liam",
+        age: 30
+    }
+    
+];
+
+let namae = persons.find(myPerson);
+
+function myPerson (person){
+    return person.name === "Akari";    
+}
+
+console.log(namae);
