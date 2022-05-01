@@ -181,26 +181,202 @@ function myFunction (text, length, arr) //the function takes 3 arguements{
 //     }
 // }
 
-const persons = [
-    {
-        name: "Akari",
-        age: 22
-    },
-    {
-        name: "Ivan",
-        age: 25
-    },
-    {
-        name: "Liam",
-        age: 30
-    }
+// const persons = [
+//     {
+//         name: "Akari",
+//         age: 22
+//     },
+//     {
+//         name: "Ivan",
+//         age: 25
+//     },
+//     {
+//         name: "Liam",
+//         age: 30
+//     }
     
+// ];
+
+// let namae = persons.find(myPerson);
+
+// function myPerson (person){
+//     return person.name === "Akari";    
+// }
+
+// console.log(namae);
+
+
+
+//Array Methods Practice
+//Array .forEach() - method
+//get sum of the array
+const numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+numbers.forEach(item => {
+    sum += item
+});
+console.log(sum);
+
+// const numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
+// numbers.forEach(function sumOfNum(value){
+//     sum += value;
+// });
+// console.log(sum);
+
+//find the total sum of each array value
+const initials = ['a', 'b', 'c', 'd', 'e', 'a', 'a', 'b', 'a'];
+let total = {};
+initials.forEach(value => {
+    if(total[value]){
+        total[value]++;
+    }
+    else{
+        total[value] = 1;
+    }
+});
+console.log(total)
+
+const names = ["John", "Taylor", "Fender"];
+names.forEach(namae => console.log(`${namae}`));
+1
+
+
+//Array .filter() - method
+
+const positiveNum = [1, -5, -29, 5, 23];
+const filtered = positiveNum.filter(value => value >= 0);
+
+console.log(filtered);
+
+
+//Array .find() - method
+
+// const onamae = ["Jackson", "Ivan", "Michel"];
+
+// const result = onamae.find(ivanName);
+
+// function ivanName (ivanValue){
+//     return ivanValue === "Ivan";
+// }
+// console.log(result);
+
+const onamae = [
+    {
+        name: "Arthur",
+        age: 23
+    },
+    {
+        name: "Kenny",
+        age: 42
+    },
+    {
+        name: "Smith",
+        age: 55
+    }
 ];
 
-let namae = persons.find(myPerson);
+const personResult = onamae.find(function(personData){
+    return personData.age === 55;
+});
+console.log(personResult);
 
-function myPerson (person){
-    return person.name === "Akari";    
+
+//Array .map() - method
+
+const randomNames = ["akari", "sam"];
+// const upperCase = randomNames.map(function(randomName){
+//     return randomName.toUpperCase();
+// })
+// console.log(upperCase);
+const upperCase = randomNames.map(randomName => randomName.toUpperCase());
+console.log(upperCase);
+
+
+const randomNumbers = [23, 24, 8, 6];
+// const doubleNumber = randomNumbers.map(function(randomNumber){
+//     return randomNumber * 2;
+// });
+// console.log(doubleNumber);
+const doubleNumbers = randomNumbers.map(randomNumber => randomNumber * 2);
+console.log(doubleNumbers);
+
+
+//Array .includes() - method
+
+const fruits = ["Tomato", "Apple", "Banana"];
+
+const output = fruits.includes("Orange");
+const output2 = fruits.includes("Tomato");
+console.log(output, output2);
+
+//Array .join() - method
+
+const countries = ["Japan", "Korea", "Italy"];
+let res = countries.join(', ').toUpperCase();
+console.log(`I want to visit ${res}`);
+
+
+
+const grades = [80, 70, 85, 90, 88];
+
+let n = 0;
+let avg = "";
+
+const totalGrades = grades.forEach(function(grade){
+    n += grade;
+    avg = n % 5;
+});
+
+console.log(n);
+
+//Array Exercises
+
+const isArray = function(input){
+    if(toString.call(input) === "[object array]"){
+        return true;
+    }
+    return false;
 }
 
-console.log(namae);
+console.log(isArray('w3resource'));
+console.log(isArray([1, 2, 4, 0]));
+
+
+//Add7
+
+// let userInput = window.prompt("Input a number: ");
+// let add7 = 7;
+
+// console.log(Number.parseInt(userInput, 10) + add7);
+
+
+//Write a function called multiply that takes 2 numbers and returns their product.
+// prompt user to input two nums
+// parseInt string input into a num data type
+// multiply num1 & num 2
+// return output
+
+
+
+/*Write a function called capitalize that takes a string and returns that string with only 
+the first letter capitalized. 
+Make sure that it can take strings that are lowercase, UPPERCASE or BoTh. */
+
+function capitalize (values) {
+    return values[0].toUpperCase() + values.substring(1);
+}
+
+console.log(capitalize(window.prompt("Input a string: ")));
+
+
+/*Write a function called lastLetter that takes a 
+string and returns the very last letter of that string: */
+//  prompt user to input a string
+//  length of string [string - 1]
+//  return output
+
+function lastLetter(lastString) {
+    return lastString[lastString.length - 1];
+}
+console.log(lastLetter(window.prompt("Input a string to display the last letter: ")));
