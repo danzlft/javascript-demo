@@ -434,7 +434,7 @@ const about = document.createElement("li");
 about.textContent = "About";
 navLinks.append(about);
 
-
+// Btn
 const contactBtn = document.createElement("button");
 contactBtn.className = "btn";
 contactBtn.textContent = "Contact";
