@@ -363,11 +363,11 @@ console.log(isArray([1, 2, 4, 0]));
 the first letter capitalized. 
 Make sure that it can take strings that are lowercase, UPPERCASE or BoTh. */
 
-function capitalize (values) {
-    return values[0].toUpperCase() + values.substring(1);
-}
+// function capitalize (values) {
+//     return values[0].toUpperCase() + values.substring(1);
+// }
 
-console.log(capitalize(window.prompt("Input a string: ")));
+// console.log(capitalize(window.prompt("Input a string: ")));
 
 
 /*Write a function called lastLetter that takes a 
@@ -376,7 +376,33 @@ string and returns the very last letter of that string: */
 //  length of string [string - 1]
 //  return output
 
-function lastLetter(lastString) {
-    return lastString[lastString.length - 1];
-}
-console.log(lastLetter(window.prompt("Input a string to display the last letter: ")));
+// function lastLetter(lastString) {
+//     return lastString[lastString.length - 1];
+// }
+// console.log(lastLetter(window.prompt("Input a string to display the last letter: ")));
+
+
+// let today = new Date();
+// const year = today.getFullYear();
+// console.log(year);
+// let day = today.getDate();
+// console.log(day);
+
+
+// const myAge = 22;
+// const dogYears = 7;
+
+// const myDogAge = myAge * dogYears;
+// console.log(myDogAge);
+
+
+
+// function sumGrades(grades){
+//     let sum = 0;
+//     grades.forEach(function(grade){
+//         sum += grade;
+//     });
+//     return sum;
+// }
+
+// console.log(sumGrades([15, 5, 10]));
