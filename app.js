@@ -210,12 +210,12 @@ function myFunction (text, length, arr) //the function takes 3 arguements{
 //Array Methods Practice
 //Array .forEach() - method
 //get sum of the array
-const numbers = [1, 2, 3, 4, 5];
-let sum = 0;
-numbers.forEach(item => {
-    sum += item
-});
-console.log(sum);
+// const numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
+// numbers.forEach(item => {
+//     sum += item
+// });
+// console.log(sum);
 
 // const numbers = [1, 2, 3, 4, 5];
 // let sum = 0;
@@ -225,29 +225,28 @@ console.log(sum);
 // console.log(sum);
 
 //find the total sum of each array value
-const initials = ['a', 'b', 'c', 'd', 'e', 'a', 'a', 'b', 'a'];
-let total = {};
-initials.forEach(value => {
-    if(total[value]){
-        total[value]++;
-    }
-    else{
-        total[value] = 1;
-    }
-});
-console.log(total)
+// const initials = ['a', 'b', 'c', 'd', 'e', 'a', 'a', 'b', 'a'];
+// let total = {};
+// initials.forEach(value => {
+//     if(total[value]){
+//         total[value]++;
+//     }
+//     else{
+//         total[value] = 1;
+//     }
+// });
+// console.log(total)
 
-const names = ["John", "Taylor", "Fender"];
-names.forEach(namae => console.log(`${namae}`));
-1
+// const names = ["John", "Taylor", "Fender"];
+// names.forEach(namae => console.log(`${namae}`));
 
 
 //Array .filter() - method
 
-const positiveNum = [1, -5, -29, 5, 23];
-const filtered = positiveNum.filter(value => value >= 0);
+// const positiveNum = [1, -5, -29, 5, 23];
+// const filtered = positiveNum.filter(value => value >= 0);
 
-console.log(filtered);
+// console.log(filtered);
 
 
 //Array .find() - method
@@ -261,86 +260,86 @@ console.log(filtered);
 // }
 // console.log(result);
 
-const onamae = [
-    {
-        name: "Arthur",
-        age: 23
-    },
-    {
-        name: "Kenny",
-        age: 42
-    },
-    {
-        name: "Smith",
-        age: 55
-    }
-];
+// const onamae = [
+//     {
+//         name: "Arthur",
+//         age: 23
+//     },
+//     {
+//         name: "Kenny",
+//         age: 42
+//     },
+//     {
+//         name: "Smith",
+//         age: 55
+//     }
+// ];
 
-const personResult = onamae.find(function(personData){
-    return personData.age === 55;
-});
-console.log(personResult);
+// const personResult = onamae.find(function(personData){
+//     return personData.age === 55;
+// });
+// console.log(personResult);
 
 
 //Array .map() - method
 
-const randomNames = ["akari", "sam"];
-// const upperCase = randomNames.map(function(randomName){
-//     return randomName.toUpperCase();
-// })
+// const randomNames = ["akari", "sam"];
+// // const upperCase = randomNames.map(function(randomName){
+// //     return randomName.toUpperCase();
+// // })
+// // console.log(upperCase);
+// const upperCase = randomNames.map(randomName => randomName.toUpperCase());
 // console.log(upperCase);
-const upperCase = randomNames.map(randomName => randomName.toUpperCase());
-console.log(upperCase);
 
 
-const randomNumbers = [23, 24, 8, 6];
+// const randomNumbers = [23, 24, 8, 6];
 // const doubleNumber = randomNumbers.map(function(randomNumber){
 //     return randomNumber * 2;
 // });
 // console.log(doubleNumber);
-const doubleNumbers = randomNumbers.map(randomNumber => randomNumber * 2);
-console.log(doubleNumbers);
+// const doubleNumbers = randomNumbers.map(randomNumber => randomNumber * 2);
+// console.log(doubleNumbers);
 
 
 //Array .includes() - method
 
-const fruits = ["Tomato", "Apple", "Banana"];
+// const fruits = ["Tomato", "Apple", "Banana"];
 
-const output = fruits.includes("Orange");
-const output2 = fruits.includes("Tomato");
-console.log(output, output2);
+// const output = fruits.includes("Orange");
+// const output2 = fruits.includes("Tomato");
+// console.log(output, output2);
 
 //Array .join() - method
 
-const countries = ["Japan", "Korea", "Italy"];
-let res = countries.join(', ').toUpperCase();
-console.log(`I want to visit ${res}`);
+// const countries = ["Japan", "Korea", "Italy"];
+// let res = countries.join(', ').toUpperCase();
+// console.log(`I want to visit ${res}`);
 
 
 
-const grades = [80, 70, 85, 90, 88];
+// const grades = [80, 70, 85, 90, 88];
 
-let n = 0;
-let avg = "";
+// let n = 0;
+// let avg = "";
 
-const totalGrades = grades.forEach(function(grade){
-    n += grade;
-    avg = n % 5;
-});
+// const totalGrades = grades.forEach(function(grade){
+//     n += grade;
+//     avg = n % 5;
+// });
 
-console.log(n);
+// console.log(n);
 
 //Array Exercises
 
-const isArray = function(input){
-    if(toString.call(input) === "[object array]"){
-        return true;
-    }
-    return false;
-}
+// const isArray = function(input){
+//     if(toString.call(input) === "[object array]"){
+//         return true;
+//     }
+//     return false;
+// }
 
-console.log(isArray('w3resource'));
-console.log(isArray([1, 2, 4, 0]));
+// console.log(isArray('w3resource'));
+// console.log(isArray([1, 2, 4, 0]));
 
 
 //Add7
@@ -406,3 +405,37 @@ string and returns the very last letter of that string: */
 // }
 
 // console.log(sumGrades([15, 5, 10]));
+
+const body = document.body;
+body.append();
+
+const navDiv = document.createElement("div");
+navDiv.className = "navDiv";
+body.append(navDiv);
+
+const logo = document.createElement("div");
+logo.className = "logo";
+logo.textContent = "花火";
+navDiv.append(logo);
+
+const navLinks = document.createElement("div");
+navLinks.className = "links";
+navDiv.append(navLinks);
+
+const home = document.createElement("li");
+home.textContent = "Home";
+navLinks.append(home);
+
+const more = document.createElement("li");
+more.textContent = "More";
+navLinks.append(more);
+
+const about = document.createElement("li");
+about.textContent = "About";
+navLinks.append(about);
+
+
+const contactBtn = document.createElement("button");
+contactBtn.className = "btn";
+contactBtn.textContent = "Contact";
+navDiv.append(contactBtn);
